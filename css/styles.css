@@ -1,0 +1,26 @@
+@import "../css/reset.css";
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/AvenirNextLTPro-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  src: url('../fonts/AvenirNextLTPro-Demi.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+.page-head {
+  background-color: #eeeeee;
+}
+.logo {
+  width: 150px;
+  display: inline;
+  padding: 20px 30px;
+}

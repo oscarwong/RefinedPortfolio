@@ -1,0 +1,29 @@
+@import "elements.less";
+@import "../css/reset.css";
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('../fonts/AvenirNextLTPro-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	@font-family: 'Avenir';
+	src: url('../fonts/AvenirNextLTPro-Demi.otf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@gray-lighter: lighten(#000, 93.5%);
+@gray:         lighten(#000, 33.5%);
+
+.page-head {
+	background-color: @gray-lighter;
+}
+
+.logo {
+	width: 150px;
+	display: inline;
+	padding: 20px 30px;
+}
