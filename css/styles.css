@@ -5,22 +5,53 @@
     A set of useful LESS mixins
     More info at: http://lesselements.com
   ---------------------------------------------------*/
-@font-face {
+.avenir {
   font-family: 'Avenir';
-  src: url('../fonts/AvenirNextLTPro-Regular.otf');
-  font-weight: normal;
   font-style: normal;
 }
 @font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  src: url('../fonts/AvenirNextLTPro-Regular.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
   src: url('../fonts/AvenirNextLTPro-Demi.otf');
   font-weight: bold;
+}
+@font-face {
+  font-family: 'Avenir';
   font-style: normal;
+  src: url('../fonts/AvenirLTStd-Roman.otf');
+  font-weight: 200;
 }
 .page-head {
   background-color: #eeeeee;
 }
-.logo {
+.page-head .logo {
   width: 150px;
   display: inline;
   padding: 20px 30px;
+}
+.page-head .pagenav {
+  float: right;
+  display: inline-block;
+}
+.page-head .pagenav .menu-item a {
+  color: #b3b3b3;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Avenir";
+  font-size: 20px;
+  font-weight: 200;
+}
+.modern_fontlink {
+  color: #b3b3b3;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Avenir";
+  font-size: 20px;
+  font-weight: 200;
 }

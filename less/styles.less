@@ -1,29 +1,57 @@
 @import "elements.less";
 @import "../css/reset.css";
 
-@font-face {
+@fonts: "../fonts";
+.avenir {
 	font-family: 'Avenir';
-	src: url('../fonts/AvenirNextLTPro-Regular.otf');
-	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	@font-family: 'Avenir';
-	src: url('../fonts/AvenirNextLTPro-Demi.otf');
+	.avenir;
+	src: url('@{fonts}/AvenirNextLTPro-Regular.otf');
+	font-weight: normal;
+}
+
+@font-face {
+	.avenir;
+	src: url('@{fonts}/AvenirNextLTPro-Demi.otf');
 	font-weight: bold;
-	font-style: normal;
+}
+
+@font-face {
+	.avenir;
+	src: url('@{fonts}/AvenirLTStd-Roman.otf');
+	font-weight: 200;
 }
 
 @gray-lighter: lighten(#000, 93.5%);
+@gray-light:   lighten(#000, 70%);
 @gray:         lighten(#000, 33.5%);
 
 .page-head {
 	background-color: @gray-lighter;
+	.logo {
+		width: 150px;
+		display: inline;
+		padding: 20px 30px;
+	}
+	.pagenav {
+		float: right;
+		display: inline-block; 
+		.menu-item {
+			a {
+				.modern_fontlink;
+			}
+		}
+	}
 }
 
-.logo {
-	width: 150px;
-	display: inline;
-	padding: 20px 30px;
+.modern_fontlink {
+	color: @gray-light;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Avenir";
+	font-size: 20px;
+	font-weight: 200;
 }
