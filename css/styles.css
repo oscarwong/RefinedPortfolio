@@ -30,6 +30,11 @@
 .body {
   background: #eeeeee;
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 30px;
+}
 .page-head {
   margin: 20px 0px;
 }
@@ -54,10 +59,9 @@
   display: inline-block;
   float: right;
   height: 3rem;
-  margin-top: 3px;
+  margin-top: 20px;
 }
 .pagenav ul {
-  line-height: 3rem;
   float: left;
 }
 .pagenav .menu-item {
@@ -82,10 +86,17 @@
 }
 .india-pic {
   background-image: url(../img/tentphoto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
   opacity: 1;
+  background-position: 10% 10%;
+  padding: 50px 0px;
+  left: 0px;
 }
 .india-pic h1 {
-  font-size: 20rem;
+  font-size: 10rem;
+  text-align: center;
 }
 .modern_fontlink {
   color: #b3b3b3;
