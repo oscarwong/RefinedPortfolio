@@ -27,31 +27,71 @@
   src: url('../fonts/AvenirLTStd-Roman.otf');
   font-weight: 200;
 }
+.body {
+  background: #eeeeee;
+}
 .page-head {
-  background-color: #eeeeee;
+  margin: 20px 0px;
 }
-.page-head .logo {
-  width: 150px;
-  display: inline;
-  padding: 20px 30px;
+.page-head .container {
+  padding: 0px 30px;
+  overflow: hidden;
 }
-.page-head .pagenav {
+.logo {
+  float: left;
+  position: relative;
+}
+.logo a {
+  display: block;
+}
+.logo-pic {
+  width: 140px;
+  display: block;
+  position: absolute;
+}
+.pagenav {
+  position: relative;
+  display: inline-block;
   float: right;
+  height: 3rem;
+  margin-top: 3px;
+}
+.pagenav ul {
+  line-height: 3rem;
+  float: left;
+}
+.pagenav .menu-item {
+  padding: 0px 10px;
   display: inline-block;
 }
-.page-head .pagenav .menu-item a {
+.pagenav .menu-item a {
+  display: block;
   color: #b3b3b3;
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Avenir";
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 200;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.pagenav .menu-item a:hover {
+  color: #555555;
+}
+.india-pic {
+  background-image: url(../img/tentphoto.jpg);
+  opacity: 1;
+}
+.india-pic h1 {
+  font-size: 20rem;
 }
 .modern_fontlink {
   color: #b3b3b3;
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Avenir";
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 200;
 }

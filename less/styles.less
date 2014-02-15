@@ -29,29 +29,71 @@
 @gray-light:   lighten(#000, 70%);
 @gray:         lighten(#000, 33.5%);
 
+.body {
+	background: @gray-lighter;
+}
+
 .page-head {
-	background-color: @gray-lighter;
-	.logo {
-		width: 150px;
-		display: inline;
-		padding: 20px 30px;
+	margin: 20px 0px;
+	.container {
+		padding: 0px 30px;
+		overflow: hidden;
 	}
-	.pagenav {
-		float: right;
-		display: inline-block; 
-		.menu-item {
-			a {
-				.modern_fontlink;
-			}
+}
+
+.logo {
+	float: left;
+	position: relative;
+	a {
+		display: block;
+	}
+}
+
+.logo-pic {
+	width: 140px;
+	display: block;
+	position: absolute;
+}
+
+.pagenav {
+	float: right;
+	position: relative;
+	display: inline-block;
+	float: right;
+	height: 3rem;
+	margin-top: 3px;
+	ul {
+		line-height: 3rem;
+		float: left;
+	}
+	.menu-item {
+		padding: 0px 10px;
+		display: inline-block;
+		a {
+			display: block;
+			.modern_fontlink;
+			.transition(.15s, ease-in-out);
+		}
+		a:hover {
+			color: @gray;
 		}
 	}
 }
+
+.india-pic {
+	background-image: url(../img/tentphoto.jpg);
+	opacity: 1;
+	h1 {
+		font-size: 20rem;
+	}
+}
+
 
 .modern_fontlink {
 	color: @gray-light;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: "Avenir";
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: 200;
 }
