@@ -1,5 +1,5 @@
 @import "elements.less";
-@import "../css/reset.css";
+// @import "../css/reset.css";
 
 @fonts: "../fonts";
 .avenir {
@@ -30,7 +30,9 @@
 @gray:         lighten(#000, 33.5%);
 
 .body {
-	background: @gray-lighter;
+	width: 100%;
+	background-color: @gray-lighter;
+	overflow: auto;
 }
 
 .container {
@@ -40,7 +42,8 @@
 }
 
 .page-head {
-	margin: 20px 0px;
+	// background: @gray-lighter;
+	padding-top: 15px;
 	.container {
 		padding: 0px 30px;
 		overflow: hidden;
